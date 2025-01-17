@@ -1,0 +1,18 @@
+<label class="-cmp-text">
+  <b
+    >Text <span class="-cmp-text-number">{{ labelNumber() }}</span></b
+  >
+  <input
+    #inputText
+    type="text"
+    [value]="data()"
+    (change)="dataChanges.emit(inputText.value)"
+  />
+</label>
+<button
+  type="button"
+  [disabled]="deletionDisabled()"
+  (click)="dataDeletes.emit()"
+>
+  X
+</button>

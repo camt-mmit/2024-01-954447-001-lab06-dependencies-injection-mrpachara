@@ -1,0 +1,16 @@
+<p class="app-cl-main-content">
+  @if (data) {
+    @for (value of data; track $index) {
+      <div>
+        <b>Text {{ $index + 1 }} :</b>
+        @if (value === '') {
+          <i>[EMPTY]</i>
+        } @else {
+          <span>{{ value }}</span>
+        }
+      </div>
+    }
+  } @else {
+    No data in storage!!
+  }
+</p>
