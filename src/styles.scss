@@ -1,7 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-  font-family: sans-serif;
+  --app-font: 'Roboto Flex', 'Noto+Sans Thai Looped';
+  --app-mono-space-font: 'Roboto Mono';
+  --app-font-size: 16px;
+
+  --app-background-color: #ffffff;
+
+  --app-primary-color: #0000ff;
+  --app-warn-color: #ff0000;
+
+  font-family: var(--app-font);
+  font-size: var(--app-font-size);
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+
+  height: 100%;
+
+  background-color: var(--app-background-color);
 }
 
 .app-cl-main-content {
@@ -28,7 +48,7 @@
       padding: 0px;
       margin: 0px;
 
-      color: var(--primary-color);
+      color: var(--app-primary-color);
 
       border: 1px solid currentColor;
       border-radius: 4px;
@@ -55,4 +75,35 @@
       }
     }
   }
+}
+
+.app-cl-number {
+  font-family: var(--app-mono-space-font);
+  font-size: inherit;
+  text-align: right;
+}
+
+.app-st-hidden {
+  visibility: hidden;
+}
+
+.app-cl-button {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+  align-items: center;
+
+  font-weight: bold;
+
+  &:disabled {
+    opacity: 0.25;
+  }
+}
+
+.app-cl-primary {
+  color: var(--app-primary-color);
+}
+
+.app-cl-warn {
+  color: var(--app-warn-color);
 }

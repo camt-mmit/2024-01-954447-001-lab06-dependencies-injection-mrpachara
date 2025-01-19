@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextCollectionComponent } from './text-collection.component';
+import { DynamicTelsComponent } from './dynamic-tels.component';
 
-describe('TextCollectionComponent', () => {
-  let component: TextCollectionComponent;
-  let fixture: ComponentFixture<TextCollectionComponent>;
+describe('DynamicTelsComponent', () => {
+  let component: DynamicTelsComponent;
+  let fixture: ComponentFixture<DynamicTelsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TextCollectionComponent]
+      imports: [DynamicTelsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TextCollectionComponent);
+    fixture = TestBed.createComponent(DynamicTelsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

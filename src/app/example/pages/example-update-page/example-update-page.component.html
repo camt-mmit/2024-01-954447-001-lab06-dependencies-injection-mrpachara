@@ -1,5 +1,5 @@
-<app-text-collection
+<app-dynamic-contacts
   [data]="data"
-  (dataChanges)="service.set($event)"
+  (dataChange)="service.set($event)"
   class="app-cl-main-content"
 />
